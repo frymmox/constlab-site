@@ -1,0 +1,69 @@
+.next-project {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40vh;
+  padding-right: var(--block-gap-horizontal, @block-gap-horizontal);
+  padding-left: var(--block-gap-horizontal, @block-gap-horizontal);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+  margin-top: -50px;
+  z-index: 2;
+  overflow: hidden;
+  border-radius: 0 0 24px 24px;
+
+  @media (max-width: @breakpoint-xl - 1px) {
+    margin-top: -20px;
+  }
+
+  @media (min-width: @breakpoint-md) {
+    height: 50vh;
+  }
+
+  a {
+    color: #fff;
+  }
+}
+
+.next-project__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+.next-project__wrap {
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.next-project__title {
+  color: #fff;
+  display: inline-block;
+
+  h2 {
+    font-size: 2.125rem;
+    line-height: 2.625rem;
+
+    @media (min-width: @breakpoint-md) {
+      font-size: 3.75rem;
+      line-height: 4.5rem;
+    }
+  }
+
+  .icon {
+    vertical-align: baseline;
+    margin-left: 0.2em;
+  }
+
+  svg {
+    @media (max-width: @breakpoint-md - 1px) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.about {
+  background-color: #fff;
+}
+
+.about__list {
+  @media (min-width: @breakpoint-lg) {
+    justify-content: space-between;
+  }
+}
+
+.about__accent {
+  @media (min-width: @breakpoint-lg) {
+    width: 33.33%;
+  }
+}
+
+.about__content {
+  @media (min-width: @breakpoint-lg) {
+    width: 58.33%;
+  }
+}
+
+.about__title {
+  a {
+    color: @body-color;
+    position: relative;
+    background-size: 0% 2px;
+    background-position: 0% 80%;
+
+    &:hover {
+      background-size: 100% 2px;
+    }
+  }
+
+  .icon {
+    vertical-align: baseline;
+    margin-left: 0.4em;
+  }
+
+  svg {
+    @media (max-width: @breakpoint-md - 1px) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  @media (min-width: @breakpoint-lg) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @breakpoint-xl) {
+    margin-bottom: 88px;
+  }
+}
+
+.about__image {
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: @breakpoint-lg - 1px) {
+    display: none;
+  }
+}
+
+.about__text {
+  margin-bottom: 40px;
+
+  @media (min-width: @breakpoint-xl) {
+    margin-bottom: 96px;
+  }
+}
+
+// Stat
+
+.stat__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: ~"calc(var(--element-gap-horizontal, @{element-gap-horizontal}) * -1)";
+  margin-bottom: ~"calc(var(--element-gap-vertical, @{element-gap-vertical}) * -1)";
+}
+
+.stat__item {
+  width: 100%;
+  border: 0 solid transparent;
+  border-right-width: var(--element-gap-horizontal, @element-gap-horizontal);
+  border-bottom-width: var(--element-gap-vertical, @element-gap-vertical);
+
+  @media (min-width: @breakpoint-md) {
+    width: 33.33%;
+  }
+
+  @media (max-width: @breakpoint-md - 1px) {
+    display: flex;
+  }
+}
+
+.stat__number {
+  h3 {
+    font-size: 3.375rem;
+    line-height: 4.125rem;
+    letter-spacing: -1px;
+
+    @media (min-width: @breakpoint-xl) {
+      font-size: 6rem;
+      line-height: 6.875rem;
+    }
+  }
+
+  @media (max-width: @breakpoint-xl - 1px) {
+    flex-grow: 1;
+  }
+}
+
+.stat__desc {
+  p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    letter-spacing: -1px;
+    color: #98A5B1;
+
+    @media (max-width: @breakpoint-md - 1px) {
+      font-size: 1.125rem;
+      line-height: 1.375rem;
+    }
+  }
+
+  @media (max-width: @breakpoint-md - 1px) {
+    width: 60%;
+  }
+}

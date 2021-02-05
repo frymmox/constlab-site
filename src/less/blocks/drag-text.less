@@ -1,0 +1,57 @@
+.drag-text {
+  background-color: #fff;
+
+  @media (max-width: @breakpoint-xl - 1px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: @breakpoint-xl) {
+    --block-gap-vertical: 120px;
+  }
+}
+
+.drag-text__content {
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+  width: 100%;
+
+  @media (max-width: @breakpoint-xl - 1px) {
+    height: 96px;
+  }
+}
+
+.drag-text__wrap {
+  position: relative;
+  overflow: visible;
+}
+
+.drag-text__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 5rem;
+  line-height: 6rem;
+  white-space: nowrap;
+  cursor: url(img/drag-hover.svg) 60 60, auto !important;
+
+  @media (min-width: @breakpoint-md) {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+
+  @media (min-width: @breakpoint-xl) {
+    font-size: 14.125rem;
+    line-height: 17rem;
+  }
+}
+
+.drag-text__icon {
+  padding-right: var(--block-gap-horizontal, @block-gap-horizontal);
+  padding-left: var(--block-gap-horizontal, @block-gap-horizontal);
+
+  @media (min-width: @breakpoint-xl) {
+    display: none;
+  }
+}

@@ -1,0 +1,146 @@
+.clients {
+  background-color: #d2d6da;
+  overflow: hidden;
+  margin-top: -50px;
+  position: relative;
+  z-index: 2;
+  border-radius: 0 0 24px 24px;
+
+  @media (max-width: @breakpoint-xl - 1px) {
+    margin-top: -20px;
+  }
+}
+
+.clients__underline {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: -16px;
+    height: 42px;
+    background-image: url('img/underline.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+
+    @media (min-width: @breakpoint-md) {
+      bottom: 8px;
+    }
+  }
+}
+
+.clients__slider {
+  padding-bottom: 72px;
+  overflow: visible;
+  cursor: url(img/drag-hover.svg) 60 60, auto;
+}
+
+.clients__slide {
+  width: 85% !important;
+
+  @media (min-width: @breakpoint-lg) {
+    width: 66.66% !important;
+  }
+}
+
+.clients__pagination {
+  text-align: right;
+  font-size: 0.75rem;
+  color: #98A5B1;
+  font-family: @text-font-family-secondary;
+}
+
+.clients__scrollbar {
+  width: 100% !important;
+  left: 0 !important;
+  height: 2px !important;
+}
+
+// Card client
+
+.card-client {
+  display: flex;
+  border-radius: 24px 24px 24px 0px;
+  overflow: hidden;
+  background-color: #fff;
+
+  @media (max-width: @breakpoint-md - 1px) {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  @media (min-width: @breakpoint-md) {
+    height: 490px;
+  }
+}
+
+.card-client__accent {
+  position: relative;
+  overflow: hidden;
+  width: 40%;
+
+  @media (max-width: @breakpoint-md - 1px) {
+    width: 45%;
+    margin-bottom: 24px;
+  }
+}
+
+.card-client__image {
+  @media (min-width: @breakpoint-md) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+.card-client__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @breakpoint-md) {
+    width: 60%;
+    padding: 24px;
+  }
+}
+
+.card-client__header {
+  margin-bottom: 24px;
+
+  @media (min-width: @breakpoint-md) {
+    margin-bottom: 36px;
+  }
+}
+
+.card-client__name {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.card-client__text {
+  margin-bottom: 24px;
+
+  @media (min-width: @breakpoint-md) {
+    margin-bottom: 32px;
+  }
+}
+
+.card-client__company {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #98A5B1;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+}

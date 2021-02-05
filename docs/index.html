@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>ArtRepin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="libs.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="icon" type="image/png" href="../img/favicon.png" sizes="32x32"> -->
+    <script src="js/pace/pace.js"></script>
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="follower"></div>
+
+    <div class="page">
+
+
+<header class="header  header--light">
+  <div class="header__wrap">
+    <div class="header__list">
+      <div class="header__fold">
+        <ul class="header__menu">
+          <li class="header__logo">
+            <a href="index.html">
+              Const Lab
+            </a>
+          </li>
+          <li>
+            <ul class="header__menu  header__menu--fold">
+              <li><a href="portfolio.html">Работы</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Лаборатория</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </li>
+          <li class="header__toggle">
+            <button class="js-header-open" type="button">
+              <svg class="header__toggle-white" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path d="M14.239 3.88235C14.239 1.73819 15.9763 0 18.1194 0C20.2625 0 21.9998 1.73819 21.9998 3.88235C21.9998 6.02652 20.2625 7.76471 18.1194 7.76471C15.9763 7.76471 14.239 6.02652 14.239 3.88235Z" fill="#fff"/>
+                <path d="M0.0107422 3.88235C0.0107422 1.73819 1.74807 0 3.89117 0C6.03427 0 7.7716 1.73819 7.7716 3.88235C7.7716 6.02652 6.03427 7.76471 3.89117 7.76471C1.74807 7.76471 0.0107422 6.02652 0.0107422 3.88235Z" fill="#fff"/>
+                <path d="M14.239 18.1176C14.239 15.9735 15.9763 14.2353 18.1194 14.2353C20.2625 14.2353 21.9998 15.9735 21.9998 18.1176C21.9998 20.2618 20.2625 22 18.1194 22C15.9763 22 14.239 20.2618 14.239 18.1176Z" fill="#fff"/>
+                <path id="square-header" d="M0.0107422 14.2353H7.7716V22H0.0107422V14.2353Z" fill="#fff"/>
+              </svg>
+
+              <svg class="header__toggle-black" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path d="M14.239 3.88235C14.239 1.73819 15.9763 0 18.1194 0C20.2625 0 21.9998 1.73819 21.9998 3.88235C21.9998 6.02652 20.2625 7.76471 18.1194 7.76471C15.9763 7.76471 14.239 6.02652 14.239 3.88235Z" fill="#131315"/>
+                <path d="M0.0107422 3.88235C0.0107422 1.73819 1.74807 0 3.89117 0C6.03427 0 7.7716 1.73819 7.7716 3.88235C7.7716 6.02652 6.03427 7.76471 3.89117 7.76471C1.74807 7.76471 0.0107422 6.02652 0.0107422 3.88235Z" fill="#131315"/>
+                <path d="M14.239 18.1176C14.239 15.9735 15.9763 14.2353 18.1194 14.2353C20.2625 14.2353 21.9998 15.9735 21.9998 18.1176C21.9998 20.2618 20.2625 22 18.1194 22C15.9763 22 14.239 20.2618 14.239 18.1176Z" fill="#131315"/>
+                <path id="square-header" d="M0.0107422 14.2353H7.7716V22H0.0107422V14.2353Z" fill="#131315"/>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__collapse  header-collapse">
+        <div class="header-collapse__image  header-collapse__image--desk">
+          <img src="img/abstract-figures.svg" alt="">
+        </div>
+
+        <div class="header-collapse__image  header-collapse__image--mob">
+          <img src="img/abstract-figures-mob.svg" alt="">
+        </div>
+
+        <div class="header-collapse__content">
+          <div class="header-collapse__wrap">
+            <div class="header-collapse__list">
+              <div class="header-collapse__header">
+                <div class="header-collapse__logo">
+                  <svg width="171" height="25">
+                    <use href="img/sprite.svg#logo-white"></use>
+                  </svg>
+                </div>
+                <div class="header-collapse__close">
+                  <button class="js-header-close" type="button">
+                    <svg width="22" height="22">
+                      <use href="img/sprite.svg#burger"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <nav class="header__nav">
+                <ul class="header__menu  header__menu--collapse">
+                  <li>
+                    <span class="header-collapse__index">Our real cases</span>
+                    <span class="header-collapse__divider">/</span>
+                    <a href="#">Works</a>
+                  </li>
+                  <li>
+                    <span class="header-collapse__index">What we can do</span>
+                    <span class="header-collapse__divider">/</span>
+                    <a href="#">Services</a>
+                  </li>
+                  <li>
+                    <span class="header-collapse__index">About our goals</span>
+                    <span class="header-collapse__divider">/</span>
+                    <a href="#">Studio</a>
+                  </li>
+                  <li>
+                    <span class="header-collapse__index">What can we give</span>
+                    <span class="header-collapse__divider">/</span>
+                    <a href="#">Academy</a>
+                  </li>
+                  <li>
+                    <span class="header-collapse__index">Join us</span>
+                    <span class="header-collapse__divider">/</span>
+                    <a href="#">Careers</a>
+                  </li>
+                  <li>
+                    <span class="header-collapse__index">Let’s discuss your idea</span>
+                    <span class="header-collapse__divider">/</span>
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="header-collapse__footer">
+                <div class="header-collapse__lang">
+                  <span class="icon">
+                    <svg width="16" height="16">
+                      <use href="img/sprite.svg#lang"></use>
+                    </svg>
+                  </span>
+                  Русский
+                </div>
+
+                <div class="header-collapse__social">
+                  <ul>
+                    <li>
+                      <a href="#">Behance</a>
+                    </li>
+                    <li>
+                      <a href="#">Dribbble</a>
+                    </li>
+                    <li>
+                      <a href="#">Instagram</a>
+                    </li>
+                    <li>
+                      <a href="#">YouTube</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+
+
+<section class="scene  gradient-title">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list">
+        <div class="grid__item">
+          <h1 class="gradient-title__text">
+            <div class="gradient-title__item  gradient-title__item--first">21 год</div>
+
+            <div class="gradient-title__item  gradient-title__item--last">колоссального</div>
+
+            <div class="gradient-title__item  gradient-title__item--last">опыта</div>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="showreel">
+  <div class="showreel__container">
+    <video class="showreel__preview" width="1920" height="970" loop playsinline autoplay muted>
+      <source src="video/showreel-prev.mp4" type="video/mp4">
+    </video>
+
+    <video class="video-js  showreel__video" width="1920" height="1080" controls>
+      <source src="video/showreel.mp4" type="video/mp4">
+    </video>
+
+    <div class="showreel__target">
+       <span class="showreel__play">Play</span>
+       <span class="showreel__pause">Pause</span>
+    </div>
+  </div>
+</section>
+
+<section class="scene  about">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list  about__list">
+        <div class="grid__item  about__accent">
+          <div class="about__title">
+            <a class="h2" href="#">Лаборатория</a>
+
+            <span class="icon">
+              <svg width="30" height="30">
+                <use href="img/sprite.svg#arrow"></use>
+              </svg>
+            </span>
+          </div>
+
+          <div class="about__image">
+            <svg width="544" height="272">
+              <use href="img/sprite.svg#abstract-figures"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="grid__item  about__content">
+          <div class="about__text">
+            <p><a href="#">Artrepin Studio</a> is&nbsp;about people who love creating, we&nbsp;learn and grow, win and celebrate together. We&nbsp;develop and improve communication systems and product promotion strategies on&nbsp;the market, making the brand image alive and attractive, and the results are predictable.</p>
+          </div>
+
+          <div class="about__stat  stat">
+            <div class="stat__list">
+              <div class="stat__item">
+                <div class="stat__number">
+                  <h3>170+</h3>
+                </div>
+
+                <div class="stat__desc">
+                  <p>More than 160 solved projects and satisfied clients.</p>
+                </div>
+              </div>
+
+              <div class="stat__item">
+                <div class="stat__number">
+                  <h3>15</h3>
+                </div>
+
+                <div class="stat__desc">
+                  <p>15&nbsp;strongest specialists in&nbsp;their field, ready to&nbsp;help with any request.</p>
+                </div>
+              </div>
+
+              <div class="stat__item">
+                <div class="stat__number">
+                  <h3>2016</h3>
+                </div>
+
+                <div class="stat__desc">
+                  <p>We&nbsp;have been helping to&nbsp;solve complex requests since 2016 and we&nbsp;don&rsquo;t plan to&nbsp;stop there..</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scene  scene--full  drag-text">
+  <div class="drag-text__content">
+    <div class="drag-text__wrap">
+      <h2 class="drag-text__text">Мы заботимся о наших клиентах, погружаемся в ваши задачи и решаем ваши проблемы.</h2>
+    </div>
+  </div>
+
+  <div class="drag-text__icon">
+    <svg width="44" height="48">
+      <use href="img/sprite.svg#drop-icon"></use>
+    </svg>
+  </div>
+</section>
+
+<section class="scene  works">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list">
+        <div class="grid__item">
+          <div class="works__header">
+            <div class="works__title">
+              <a class="h2" href="#">Works</a>
+
+              <span class="icon">
+                <svg width="30" height="30">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+              </span>
+            </div>
+
+            <div class="works__tabs">
+              <div class="works__nav">
+                <ul class="works__tag">
+                  <li>
+                    <a href="#" class="active">
+                      <span class="works__frame">Everything <span>23</span></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="works__frame">Website <span>10</span></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="works__frame">Branding <span>5</span></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="works__frame">Presentation <span>3</span></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="works__frame">Mobile App <span>2</span></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="works__frame">Concept <span>3</span></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__list">
+        <div class="grid__item  works__item  works__item--large">
+          <div class="work-card">
+            <div class="work-card__accent">
+              <div class="work-card__image">
+                <img src="img/card1.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="work-card__content">
+              <div class="work-card__title">
+                <h3><a href="#">Corporate website for Dots Cafe.</a></h3>
+              </div>
+
+              <div class="work-card__tags">
+                <ul>
+                  <li>UX/UI Design</li>
+                  <li class="work-card__divider">.</li>
+                  <li>Branding</li>
+                  <li class="work-card__divider">.</li>
+                  <li>Motion</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__item  works__item">
+          <div class="work-card">
+            <div class="work-card__accent">
+              <div class="work-card__image">
+                <img src="img/card2.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="work-card__content">
+              <div class="work-card__title">
+                <h3><a href="#">Website for videomakers Engine Room.</a></h3>
+              </div>
+
+              <div class="work-card__tags">
+                <ul>
+                  <li>UX/UI Design</li>
+                  <li class="work-card__divider">.</li>
+                  <li>Branding</li>
+                  <li class="work-card__divider">.</li>
+                  <li>Motion</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__item  works__item">
+          <div class="work-card">
+            <div class="work-card__accent">
+              <div class="work-card__image">
+                <img src="img/card3.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="work-card__content">
+              <div class="work-card__title">
+                <h3><a href="#">Personal identety for Keller Henson.</a></h3>
+              </div>
+
+              <div class="work-card__tags">
+                <ul>
+                  <li>Graphic design</li>
+                  <li class="work-card__divider">.</li>
+                  <li>Branding</li>
+                  <li class="work-card__divider">.</li>
+                  <li>Motion</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__item  works__item">
+          <div class="work-card">
+            <div class="work-card__accent">
+              <div class="work-card__image">
+                <img src="img/card4.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="work-card__content">
+              <div class="work-card__title">
+                <h3><a href="#">Mobile app for fitness. Tonal.</a></h3>
+              </div>
+
+              <div class="work-card__tags">
+                <ul>
+                  <li>UX/UI Design</li>
+                  <li class="work-card__divider">.</li>
+                  <li>Branding</li>
+                  <li class="work-card__divider">.</li>
+                  <li>Development</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__item  works__item">
+          <div class="work-card">
+            <div class="work-card__accent">
+              <div class="work-card__image">
+                <img src="img/card5.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="work-card__content">
+              <div class="work-card__title">
+                <h3><a href="#">Personal website Synell.</a></h3>
+              </div>
+
+              <div class="work-card__tags">
+                <ul>
+                  <li>UX/UI Design</li>
+                  <li class="work-card__divider">.</li>
+                  <li>Branding</li>
+                  <li class="work-card__divider">.</li>
+                  <li>Motion</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scene  favorite-clients">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list">
+        <div class="grid__item">
+          <div class="favorite-clients__header">
+            <div class="favorite-clients__title">
+              Our favourite Clients
+            </div>
+
+            <div class="favorite-clients__date">
+              2016 - 2020
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__list  favorite-clients__list">
+        <div class="grid__item  favorite-clients__item">
+          <div class="favorite-clients__logo">
+            <img src="img/vnukovo.png" class="js-oneFirst  in" width="317" height="168" alt="">
+
+            <img src="img/pink-lemon.png" class="js-oneLast  out" width="317" height="168" alt="">
+          </div>
+        </div>
+
+        <div class="grid__item  favorite-clients__item">
+           <div class="favorite-clients__logo">
+              <img src="img/keyrent.png" class="js-twoFirst  in" width="317" height="168" alt="">
+
+              <img src="img/asia-import.png" class="js-twoLast  out" width="317" height="168" alt="">
+          </div>
+        </div>
+
+        <div class="grid__item  favorite-clients__item">
+           <div class="favorite-clients__logo">
+              <img src="img/trade.png" class="js-threeFirst  in" width="317" height="168" alt="">
+
+              <img src="img/eat-market.png" class="js-threeLast  out" width="317" height="168" alt="">
+          </div>
+        </div>
+
+        <div class="grid__item  favorite-clients__item">
+           <div class="favorite-clients__logo">
+              <img src="img/synell.png" class="js-fourFirst  in" width="317" height="168" alt="">
+
+              <img src="img/dots.png" class="js-fourLast  out" width="317" height="168" alt="">
+          </div>
+        </div>
+
+        <div class="grid__item  favorite-clients__item">
+           <div class="favorite-clients__logo">
+              <img src="img/alliance.png" class="js-fiveFirst  in" width="317" height="168" alt="">
+
+              <img src="img/vorsicher.png" class="js-fiveLast  out" width="317" height="168" alt="">
+          </div>
+        </div>
+
+        <div class="grid__item  favorite-clients__item">
+           <div class="favorite-clients__logo">
+              <img src="img/rakov.png" class="js-tenFirst  in" width="317" height="168" alt="">
+
+              <img src="img/camp-town.png" class="js-tenLast  out" width="317" height="168" alt="">
+          </div>
+        </div>
+
+        <div class="grid__item  favorite-clients__item">
+           <div class="favorite-clients__logo">
+              <img src="img/new-nordic.png" class="js-nineFirst  in" width="317" height="168" alt="">
+
+              <img src="img/marina.png" class="js-nineLast  out" width="317" height="168" alt="">
+          </div>
+        </div>
+
+        <div class="grid__item  favorite-clients__item">
+           <div class="favorite-clients__logo">
+              <img src="img/air-device.png" class="js-eightFirst  in" width="317" height="168" alt="">
+
+              <img src="img/brides.png" class="js-eightLast  out" width="317" height="168" alt="">
+          </div>
+        </div>
+
+        <div class="grid__item  favorite-clients__item">
+           <div class="favorite-clients__logo">
+              <img src="img/quantum.png" class="js-sevenFirst  in" width="317" height="168" alt="">
+
+              <img src="img/tom-farr.png" class="js-sevenLast  out" width="317" height="168" alt="">
+          </div>
+        </div>
+
+        <div class="grid__item  favorite-clients__item">
+           <div class="favorite-clients__logo">
+              <img src="img/atlas-college.png" class="js-sixFirst  in" width="317" height="168" alt="">
+
+              <img src="img/flyboard.png" class="js-sixLast  out" width="317" height="168" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scene  services">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list  services__list">
+        <div class="grid__item  services__accent">
+          <div class="services__sticky">
+            <div class="services__title">
+              <a class="h2" href="#">Services</a>
+
+              <span class="icon">
+                <svg width="30" height="30">
+                  <use href="img/sprite.svg#arrow-top-white"></use>
+                </svg>
+              </span>
+            </div>
+
+            <div class="services__images">
+              <video id="services-ui-design" class="services__image" width="544" height="310" loop playsinline autoplay muted>
+                <source src="video/uiux-design.mp4" type="video/mp4">
+              </video>
+
+              <video id="services-branding" class="services__image" width="544" height="310" loop playsinline autoplay muted>
+                <source src="video/branding.mp4" type="video/mp4">
+              </video>
+
+              <video id="services-mobile-app" class="services__image" width="544" height="310" loop playsinline autoplay muted>
+                <source src="video/mobile.mp4" type="video/mp4">
+              </video>
+
+              <video id="services-motion-design" class="services__image" width="544" height="310" loop playsinline autoplay muted>
+                <source src="video/motion.mp4" type="video/mp4">
+              </video>
+
+              <video id="services-graphic-design" class="services__image" width="544" height="310" loop playsinline autoplay muted>
+                <source src="video/illustration.mp4" type="video/mp4">
+              </video>
+
+              <video id="services-marketing" class="services__image" width="544" height="310" loop playsinline autoplay muted>
+                <source src="video/marketing.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__item  services__content">
+          <div class="services__text">
+            <p>We&nbsp;are one team with a&nbsp;common goal. By&nbsp;setting the right priorities and defining areas of&nbsp;competence and responsibility, we&nbsp;achieve the highest result.</p>
+
+            <p>Together.</p>
+          </div>
+
+          <div class="services__list  list-services">
+            <ul class="list-services__wrap">
+              <li class="list-services__item  js-services-target" data-target="#services-ui-design">
+                <div class="list-services__number">
+                  01
+                </div>
+
+                <div class="list-services__content">
+                  <div class="list-services__title">
+                    <span>UI/UX Design</span>
+
+                    <span class="icon">
+                      <svg width="12" height="12">
+                        <use href="img/sprite.svg#arrow-top"></use>
+                      </svg>
+                    </span>
+                  </div>
+
+                  <ul class="list-services__tags">
+                    <li>UX/UI Design</li>
+                    <li class="list-services__divider">.</li>
+                    <li>web design</li>
+                    <li class="list-services__divider">.</li>
+                    <li>ecommerce</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Digital Product</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Services</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Style Guide</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="list-services__item  js-services-target" data-target="#services-branding">
+                <div class="list-services__number">
+                  02
+                </div>
+
+                <div class="list-services__content">
+                  <div class="list-services__title">
+                    <span>Branding</span>
+
+                    <span class="icon">
+                      <svg width="12" height="12">
+                        <use href="img/sprite.svg#arrow-top"></use>
+                      </svg>
+                    </span>
+                  </div>
+
+                  <ul class="list-services__tags">
+                    <li>Logo design</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Identity</li>
+                    <li class="list-services__divider">.</li>
+                    <li>social banners</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Custom emails</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Templates</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Presentations</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="list-services__item  js-services-target" data-target="#services-mobile-app">
+                <div class="list-services__number">
+                  03
+                </div>
+
+                <div class="list-services__content">
+                  <div class="list-services__title">
+                    <span>Mobile App</span>
+
+                    <span class="icon">
+                      <svg width="12" height="12">
+                        <use href="img/sprite.svg#arrow-top"></use>
+                      </svg>
+                    </span>
+                  </div>
+
+                  <ul class="list-services__tags">
+                    <li>Mobile app</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Desktop App</li>
+                    <li class="list-services__divider">.</li>
+                    <li>User Interface</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="list-services__item  js-services-target" data-target="#services-motion-design">
+                <div class="list-services__number">
+                  04
+                </div>
+
+                <div class="list-services__content">
+                  <div class="list-services__title">
+                    <span>Motion Design, 3D</span>
+
+                    <span class="icon">
+                      <svg width="12" height="12">
+                        <use href="img/sprite.svg#arrow-top"></use>
+                      </svg>
+                    </span>
+                  </div>
+
+                  <ul class="list-services__tags">
+                    <li>UI Animation</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Logo Animation</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Video Ad</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Motion graphic</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Illustrations Animation</li>
+                    <li class="list-services__divider">.</li>
+                    <li>3D Modeling</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Video</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="list-services__item  js-services-target" data-target="#services-graphic-design">
+                <div class="list-services__number">
+                  05
+                </div>
+
+                <div class="list-services__content">
+                  <div class="list-services__title">
+                    <span>Graphic Design, Illustrations</span>
+
+                    <span class="icon">
+                      <svg width="12" height="12">
+                        <use href="img/sprite.svg#arrow-top"></use>
+                      </svg>
+                    </span>
+                  </div>
+
+                  <ul class="list-services__tags">
+                    <li>Advertise banner</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Custom Illustrations</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Print amterials</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Icons</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="list-services__item  js-services-target" data-target="#services-marketing">
+                <div class="list-services__number">
+                  06
+                </div>
+
+                <div class="list-services__content">
+                  <div class="list-services__title">
+                    <span>Marketing</span>
+
+                    <span class="icon">
+                      <svg width="12" height="12">
+                        <use href="img/sprite.svg#arrow-top"></use>
+                      </svg>
+                    </span>
+                  </div>
+
+                  <ul class="list-services__tags">
+                    <li>UX/UI Design</li>
+                    <li class="list-services__divider">.</li>
+                    <li>web design</li>
+                    <li class="list-services__divider">.</li>
+                    <li>ecommerce</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Digital Product</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Services</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Style Guide</li>
+                    <li class="list-services__divider">.</li>
+                    <li>Content</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scene  cources">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list  cources__list">
+        <div class="grid__item  cources__accent">
+          <div class="cources__title">
+            <a class="h2" href="#">Cources</a>
+
+            <span class="icon">
+              <svg width="30" height="30">
+                <use href="img/sprite.svg#arrow"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="grid__item  cources__content">
+          <div class="cources__text">
+            <p>In&nbsp;this is&nbsp;<a href="#">online cource</a>, we&nbsp;will analyze practical tips for managing web projects, and you will learn how to&nbsp;unleash the potential of&nbsp;a&nbsp;leader in&nbsp;yourself.</p>
+          </div>
+
+          <div class="cources__info  cources-table">
+            <div class="cources-table__row">
+              <div class="cources-table__item  cources-table__item--head">
+                Speaker
+              </div>
+
+              <div class="cources-table__item">
+                Ivan Repin
+              </div>
+            </div>
+
+            <div class="cources-table__row">
+              <div class="cources-table__item  cources-table__item--head">
+                The Format
+              </div>
+
+              <div class="cources-table__item">
+                Theory & Practice
+              </div>
+            </div>
+
+            <div class="cources-table__row">
+              <div class="cources-table__item  cources-table__item--head">
+                Materials
+              </div>
+
+              <div class="cources-table__item">
+                35 Video lessons & Source files
+              </div>
+            </div>
+          </div>
+
+          <div class="cources__action">
+            <div class="cources__button">
+              <a href="#">Cource Page</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__list  cources__media">
+        <div class="grid__item">
+          <div class="cources__container">
+            <video class="video-js  cources__video" width="1280" height="720" controls poster="img/promo.jpg">
+              <source src="video/cources.mp4" type="video/mp4">
+            </video>
+            <div class="cources__target">
+              <span class="cources__play">Play</span>
+              <span class="cources__pause">Pause</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__list">
+        <div class="grid__item  cources__desc">
+          <p>The mission of&nbsp;this course is&nbsp;to&nbsp;teach beginners and hold the hand of&nbsp;those who are marking time and do&nbsp;not know how to&nbsp;start making money.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scene  clients">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list">
+        <div class="grid__item">
+          <h2>Our <span class="clients__underline"><span style="position: relative;">clients</span></span> say</h2>
+        </div>
+      </div>
+
+      <div class="grid__list">
+        <div class="grid__item">
+          <div ref="slider" class="swiper-container  clients__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide  clients__slide">
+                <div class="card-client">
+                  <div class="card-client__accent">
+                    <div class="card-client__image">
+                      <img src="img/client1.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card-client__main">
+                    <div class="card-client__content">
+                      <div class="card-client__header">
+                        <div class="card-client__name">
+                          Denis Kornilovich
+                        </div>
+                        <div class="card-client__company">
+                          FlyBoard Russia
+                        </div>
+                      </div>
+
+                      <div class="card-client__text">
+                        <p>Norm turned out.</p>
+                        <p>The terms of course were f*ck =)</p>
+                      </div>
+
+                      <div class="card-client__logo">
+                        <svg width="62" height="46">
+                          <use href="img/sprite.svg#flyboard"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  clients__slide">
+                <div class="card-client">
+                  <div class="card-client__accent">
+                    <div class="card-client__image">
+                      <img src="img/client1.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card-client__main">
+                    <div class="card-client__content">
+                      <div class="card-client__header">
+                        <div class="card-client__name">
+                          Denis Kornilovich
+                        </div>
+                        <div class="card-client__company">
+                          FlyBoard Russia
+                        </div>
+                      </div>
+
+                      <div class="card-client__text">
+                        <p>Norm turned out.</p>
+                        <p>The terms of course were f*ck =)</p>
+                      </div>
+
+                      <div class="card-client__logo">
+                        <svg width="62" height="46">
+                          <use href="img/sprite.svg#flyboard"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  clients__slide">
+                <div class="card-client">
+                  <div class="card-client__accent">
+                    <div class="card-client__image">
+                      <img src="img/client1.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card-client__main">
+                    <div class="card-client__content">
+                      <div class="card-client__header">
+                        <div class="card-client__name">
+                          Denis Kornilovich
+                        </div>
+                        <div class="card-client__company">
+                          FlyBoard Russia
+                        </div>
+                      </div>
+
+                      <div class="card-client__text">
+                        <p>Norm turned out.</p>
+                        <p>The terms of course were f*ck =)</p>
+                      </div>
+
+                      <div class="card-client__logo">
+                        <svg width="62" height="46">
+                          <use href="img/sprite.svg#flyboard"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  clients__slide">
+                <div class="card-client">
+                  <div class="card-client__accent">
+                    <div class="card-client__image">
+                      <img src="img/client1.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="card-client__main">
+                    <div class="card-client__content">
+                      <div class="card-client__header">
+                        <div class="card-client__name">
+                          Denis Kornilovich
+                        </div>
+                        <div class="card-client__company">
+                          FlyBoard Russia
+                        </div>
+                      </div>
+
+                      <div class="card-client__text">
+                        <p>Norm turned out.</p>
+                        <p>The terms of course were f*ck =)</p>
+                      </div>
+
+                      <div class="card-client__logo">
+                        <svg width="62" height="46">
+                          <use href="img/sprite.svg#flyboard"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination  clients__pagination"></div>
+
+            <div class="swiper-scrollbar  clients__scrollbar"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__wrap">
+    <div class="footer__list  footer__list--top">
+      <div class="footer__item  footer__content">
+        <div class="footer__text">
+          <p>Let’s create something amazing together</p>
+
+          <div class="footer__mail">
+            <a href="mailto:info@artrepin.studio">info@artrepin.studio</a>
+
+            <span class="icon">
+              <svg width="18" height="18">
+                <use href="img/sprite.svg#arrow-top-white"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <ul class="footer__nav">
+          <li>
+            <a href="#">Works</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Studio</a>
+          </li>
+          <li>
+            <a href="#">Academy</a>
+          </li>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__item  footer__image">
+        <svg width="579" height="386">
+          <use href="img/sprite.svg#abstract-figures-2"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="footer__list  footer__list--bottom">
+      <div class="footer__item">
+        <ul class="footer__copyr">
+          <li>Artrepin Studio © 2020</li>
+          <li>
+            <a href="#">Offer</a>
+          </li>
+          <li>
+            <a href="#">Privacy</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__item  footer__media">
+        <ul class="footer__social">
+          <li>
+            <a href="#">Behance</a>
+          </li>
+          <li>
+            <a href="#">Dribbble</a>
+          </li>
+          <li>
+            <a href="#">Instagram</a>
+          </li>
+          <li>
+            <a href="#">YouTube</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__item">
+        <div class="footer__lang">
+          <span class="icon">
+            <svg width="16" height="16">
+              <use href="img/sprite.svg#lang"></use>
+            </svg>
+          </span>
+          Русский
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="libs.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+
