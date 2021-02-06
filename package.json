@@ -30,6 +30,7 @@
     "focus-visible": "^5.1.0",
     "gsap": "^3.5.1",
     "scroll-lock": "^2.1.4",
+    "smooth-scrollbar": "^8.6.0",
     "swiper": "^6.1.2"
   }
 }
