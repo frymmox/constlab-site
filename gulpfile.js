@@ -59,6 +59,7 @@ const scriptsLibs = () => {
       'node_modules/scroll-lock/dist/scroll-lock.min.js',
       'node_modules/swiper/swiper-bundle.min.js',
       'node_modules/gsap/dist/gsap.min.js',
+      'node_modules/gsap/dist/ScrollTrigger.min.js',
       'node_modules/gsap/dist/Draggable.min.js',
       'node_modules/video.js/dist/video.min.js',
       'node_modules/smooth-scrollbar/dist/smooth-scrollbar.js',
