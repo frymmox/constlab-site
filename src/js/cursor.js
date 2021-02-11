@@ -6,7 +6,6 @@
   const cursor = document.querySelector('.cursor');
   const follower = document.querySelector('.follower');
   const showreel = document.querySelector('.showreel');
-  const dragText = document.querySelector('.drag-text__content');
 
   gsap.set(cursor, {xPercent: -50, yPercent: -50});
   gsap.set(follower, {xPercent: -50, yPercent: -50});
@@ -82,16 +81,6 @@
   });
 
   showreel.addEventListener('mouseleave', () => {
-    cursor.classList.remove('cursor--hidden');
-    follower.classList.remove('cursor--hidden');
-  });
-
-  dragText.addEventListener('mouseenter', () => {
-    cursor.classList.add('cursor--hidden');
-    follower.classList.add('cursor--hidden');
-  });
-
-  dragText.addEventListener('mouseleave', () => {
     cursor.classList.remove('cursor--hidden');
     follower.classList.remove('cursor--hidden');
   });

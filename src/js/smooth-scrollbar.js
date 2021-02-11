@@ -22,7 +22,6 @@ gsap.fromTo('.parallax-image', {
     scale: 1,
   },
   {
-    duration: 2,
     scale: 1.1,
     yPercent: 0,
     scrollTrigger: {
@@ -31,6 +30,42 @@ gsap.fromTo('.parallax-image', {
       // markers: true,
       end: 'bottom bottom',
       scrub: true,
+    }
+});
+
+gsap.to('.gradient-title__item--first', {
+  y: -200,
+  scrollTrigger: {
+    trigger: '.gradient-title',
+    endTrigger: '.showreel',
+    start: 'top top',
+    // markers: true,
+    end: 'bottom bottom',
+    scrub: true,
+  }
+});
+
+gsap.to('.gradient-title__item--last', {
+  y: -125,
+  scrollTrigger: {
+    trigger: '.gradient-title',
+    endTrigger: '.showreel',
+    start: 'top top',
+    // markers: true,
+    end: 'bottom bottom',
+    scrub: true,
+  }
+});
+
+gsap.to('.drag-text__text', {
+  xPercent: -100,
+  scrollTrigger: {
+    trigger: '.drag-text',
+    endTrigger: '.works',
+    start: 'top 55%',
+    // markers: true,
+    end: 'center bottom',
+    scrub: 1.5,
   }
 });
 
