@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const scroller = document.querySelector('.page');
 
-const scrollbar = Scrollbar.init(scroller, { delegateTo: document, alwaysShowTracks: true });
+const scrollbar = Scrollbar.init(scroller, { delegateTo: document });
 
 ScrollTrigger.scrollerProxy(scroller, {
   scrollTop(value) {

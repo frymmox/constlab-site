@@ -23,7 +23,7 @@ html {
 ::after,
 ::before {
   box-sizing: inherit;
-  cursor: none;
+  // cursor: none;
 }
 
 body {
@@ -143,6 +143,17 @@ a {
   transition-timing-function: ease-out;
   transition-property: background-size;
   text-decoration: none;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    right: -30px;
+    bottom: -30px;
+  }
 
   &:hover {
     background-size: 100% 1px;

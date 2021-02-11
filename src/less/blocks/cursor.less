@@ -32,11 +32,34 @@
   opacity: 0;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
-  transition-property: background-color, border-color;
+  transition-property: opacity;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D8AC8B;
+    opacity: 0;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    transition-property: opacity;
+  }
+
+  // &--hover {
+  //   background-color: fade(#D8AC8B, 20%);
+  //   border-color: transparent;
+  // }
 
   &--hover {
-    background-color: fade(#D8AC8B, 20%);
-    border-color: transparent;
+    opacity: 0.4 !important;
+
+    &::before {
+      opacity: 1;
+    }
   }
 
   &--hidden {
