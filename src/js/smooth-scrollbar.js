@@ -83,7 +83,7 @@ gsap.from(".stat__number h3", {
     trigger: '.about',
     start: 'top+=200px center',
     end: 'bottom bottom',
-    markers: true,
+    // markers: true,
     scrub: true,
     once: true
   }
