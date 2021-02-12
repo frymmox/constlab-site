@@ -69,6 +69,26 @@ gsap.to('.drag-text__text', {
   }
 });
 
+gsap.from(".stat__number h3", {
+	ease: "none",
+	innerText: 0,
+	roundProps: "innerText",
+  onUpdate: function() {
+    this.targets().forEach(target => {
+      const val = gsap.getProperty(target, "innerText");
+      target.innerText = val;
+    });
+  },
+  scrollTrigger: {
+    trigger: '.about',
+    start: 'top+=200px center',
+    end: 'bottom bottom',
+    markers: true,
+    scrub: true,
+    once: true
+  }
+}, "<");
+
 if (document.querySelector('.gsap-marker-scroller-start')) {
   const markers = gsap.utils.toArray('[class *= "gsap-marker"]');
 
